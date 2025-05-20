@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suplementos Ideais</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ff88;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+    }
+    .carousel img {
+      position: absolute;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      animation: slide 10s infinite alternate;
+    }
+    .carousel img:nth-child(2) {
+      animation-delay: 5s;
+    }
+    .carousel-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px #000;
+      z-index: 2;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    @keyframes slide {
+      0% { opacity: 1; }
+      49% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    .section {
+      padding: 30px 15px;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #222;
+      font-size: 22px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 300px;
+      padding: 15px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+      color: #111;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+    }
+    footer a {
+      color: #00ff88;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-text {
+        font-size: 18px;
+      }
+      nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="./LOGO NUTRI (2).jpeg" alt="Logo Nutricional" />
+  <h1>Suplementos Ideais</h1>
+  <nav>
+    <a href="#creatinas">Creatinas</a>
+    <a href="#wheys">Wheys</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<div class="carousel">
+  <div class="carousel-text">Sua melhor versão começa aqui 💪</div>
+  <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Banner 1" />
+  <img src="./casal-muscular-fazendo-exercicio-de-prancha-em-conjunto_13339-151107.jpg" alt="Banner 2" />
+</div>
+
+<section class="section" id="creatinas">
+  <h2>Creatinas Recomendadas</h2>
+  <div class="products">
+    <div class="card">
+      <img src="./WhatsApp Image 2025-05-19 at 19.15.33.jpeg" alt="Creatina Growth Roxa" />
+      <h3>Growth Creapure</h3>
+      <p>Creatina Monohidratada Alemã – Mais desempenho e força.</p>
+    </div>
+    <div class="card">
+      <img src="./WhatsApp Image 2025-05-19 at 19.17.04.jpeg" alt="Creatina Dark Lab" />
+      <h3>Dark Lab Pure</h3>
+      <p>Alta pureza, performance para treinos intensos.</p>
+    </div>
+    <div class="card">
+      <img src="./WhatsApp Image 2025-05-19 at 19.18.38 (1).jpeg" alt="Creatina Growth Verde" />
+      <h3>Growth Monohidratada</h3>
+      <p>Ótimo custo-benefício, ideal para ganho de força.</p>
+    </div>
+    <div class="card">
+      <img src="./WhatsApp Image 2025-05-19 at 19.22.03.jpeg" alt="Creatina Nutrify" />
+      <h3>Nutrify 100%</h3>
+      <p>Creapure com selo de qualidade premium.</p>
+    </div>
+    <div class="card">
+      <img src="./image (1).png" alt="Creatina Nutrata" />
+      <h3>Nutrata Creapure</h3>
+      <p>Sem sabor e com máxima absorção.</p>
+    </div>
+    <div class="card">
+        <img src="./image (3).png" alt="Creatina Nutrata" />
+        <h3>Creatina Hardcore</h3>
+        <p>Aumenta força e explosão muscular. Ideal para treinos intensos, ganho de massa magra e rápida recuperação.</p>
+    </div>
+    <div class="card">
+      <img src="./510cPtIUgmL._AC_SX679_.png" alt="Creatina Max Titanium" />
+      <h3>Max Titanium</h3>
+      <p>Potente aliado para aumento de força muscular.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="wheys">
+  <h2>Wheys Recomendados</h2>
+  <div class="products">
+    <div class="card">
+      <img src="./nutrata_whey_grego_3w_450g_morango_com_chantilly_409_1_70070bce386dfdfb85b30c0a96604edb.jpg" alt="Whey 1" />
+      <h3>Nutrata Whey Grego</h3>
+      <p>Tipo: Whey com adição de proteínas do leite e textura cremosa Benefícios: Delicioso, com adição de fibras, ideal para lanches proteicos.</p>
+    </div>
+    <div class="card">
+      <img src="./WhatsApp Image 2025-05-19 at 19.31.27.jpeg" alt="Whey 2" />
+      <h3>Growth Whey Protein Concentrado</h3>
+      <p>Tipo: Whey Concentrado Benefícios: Preço competitivo, transparência nos testes de qualidade</p>
+    </div>
+    <div class="card">
+      <img src="./image (2).png" alt="Whey 3" />
+      <h3>Dymatize ISO100</h3>
+      <p>Tipo: Whey Isolado e Hidrolisado Benefícios: Absorção rápida, zero lactose, ideal para pós-treino imediato</p>
+    </div>
+    <div class="card">
+        <img src="./image (4).png" alt="Whey 3" />
+        <h3>Nutri Whey Protein – Integralmédica</h3>
+        <p>30g de proteína por dose, baixo teor de gordura e sem glúten. Ideal para recuperação muscular e ganho de massa magra.</p>
+      </div>
+  </div>
+</section>
+
+<footer id="contato">
+  <p>📲 Fale comigo no WhatsApp: <a href="https://wa.me/5521994465414">Clique aqui</a></p>
+</footer>
+
+</body>
+</html>
